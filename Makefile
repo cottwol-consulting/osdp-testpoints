@@ -4,6 +4,7 @@ VERSION=0.02
 all:	${OSDP_CONTAINERS}
 
 clean:
+	(cd doc; make clean);
 	rm -rvf build *tar build_osdp-acu build_osdp-pd
 
 osdp-acu.tar:	etc/osdp-acu/Dockerfile
